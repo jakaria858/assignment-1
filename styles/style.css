@@ -4,10 +4,11 @@
   padding: 0; */
 }
 
-/* .container{
+ .container{
   max-width: 1200px;
   margin: auto;
-} */
+  background-color: #FFFFFF;
+} 
 nav{
   background-color: white;
   display: flex;
@@ -18,15 +19,15 @@ nav{
   display: flex;
 }
 nav div img{
-  width: 50px;
+  /* width: 50px; */
   height: 50px;
-  margin-top: 30px;
+  margin-top: 30px; 
   
 }
-.logo-text{
+/* .logo-text{
   display: block;
   gap: 0;
-}
+} */
 nav div ul li, a{
   list-style: none;
   padding: 10px;
@@ -79,4 +80,47 @@ nav div ul li, a{
     transform: translateX(-50%);
     padding: 12px 24px;
    height: 50px;
+ }
+/* banner end */
+
+/* meet the speakers */
+
+.meet-the-speakers{
+  text-align: center;
+}
+.meet-the-speakers{
+  margin: 30px;
+  padding: 20px;
+}
+.top-cards{
+ display: flex;
+justify-content: space-between;
+
+}
+.bottom-cards{
+ display: flex;
+ justify-content: space-between;
+ 
+}
+.card-text{
+  /* display: block; */
+  
+ /* */
+ }
+ .card-text,span{
+  display: block;
+   text-align: left;
+
+  
+ }
+ .card{
+  margin: 20px;
+  /* padding: 10px;
+   */
+  background-color: rgb(227, 244, 244);
+  border-radius: 20px ;
+ }
+ span{
+  /* color: blue;
+  font: 900; */
  }
