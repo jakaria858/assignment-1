@@ -117,10 +117,20 @@ justify-content: space-between;
   margin: 20px;
   /* padding: 10px;
    */
-  background-color: rgb(227, 244, 244);
+  background-color: rgb(244, 242, 236);
   border-radius: 20px ;
  }
  span{
   /* color: blue;
   font: 900; */
  }
+/* meet the speakers --end */
+
+/* Secure Your Spot */
+.meet-container{
+max-width: 1000px;
+  margin: auto;
+} 
+.meet{
+  display: flex;
+}
