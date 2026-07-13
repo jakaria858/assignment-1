@@ -63,6 +63,15 @@ nav div ul li, a{
      text-align: center;
      position: relative;
 }
+.overlay{
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
  section div h1, p{
   
   padding: 50px;
@@ -73,14 +82,7 @@ nav div ul li, a{
     font-weight: bold;
     margin-top: 30px;
    }
- section div button{
-   position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 12px 24px;
-   height: 50px;
- }
+ 
 /* banner end */
 
 /* meet the speakers */
@@ -128,9 +130,133 @@ justify-content: space-between;
 
 /* Secure Your Spot */
 .meet-container{
-max-width: 1000px;
+max-width: 1200px;
   margin: auto;
+  margin-bottom: 2rem;
+  gap: 20px;
 } 
 .meet{
   display: flex;
+  justify-content: space-between;
 }
+.price{
+  font-weight: bolder;
+}
+.card-btn{
+   /* height: 50px; */
+   width: 250px;
+   border-radius: 10px;
+   padding: 20px;
+   cursor: pointer;
+   font-weight: bold;
+   padding: 10px;
+   align-items: center;
+}
+.meet-card{
+  display: grid;
+  /* grid-template-areas: var(3, 1fr); */
+   grid-template-columns: repeat(3,1fr); 
+     border-radius: 10px;
+  /* margin: 10; */
+    /* box-shadow: red; */
+  border-color: wheat;
+  background-color: rgb(116, 198, 198);
+  align-items: stretch;  /* Makes all cards equal height*/
+    flex: 1;              /* Equal width */
+    height: 600px;  /* Same height */
+    width: 300px; 
+   gap: 10px;
+   box-sizing: border-box;
+}
+hr{
+  color: black;
+  font: 100;
+ }
+
+.meet-card-1{
+  background-color: rgb(244, 235, 217);
+ border-radius: 10px;
+}
+.meet-card-2{
+  background-color: rgb(54, 46, 46);
+  color: #FFFFFF;
+  border-radius: 10px;
+ 
+}
+.meet-card-3{
+  background-color: rgb(184, 242, 242);
+  border-radius: 10px;
+} 
+/*  */
+/* something */
+
+/* something-end */
+
+/* footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+ 
+}
+.footer-1{
+ margin-top: 80px;
+ margin-left:40px;
+ padding: 20px;
+ }  
+.footer-2{ 
+ margin-top: 120px;
+ margin-bottom: 0%;
+ padding: 20px;
+
+}
+.footer-3 {
+   margin-top: 50px;
+ padding: 20px;
+ gap: 10px;
+ }
+ .footer-3 span :hover{
+  background-color: rgb(196, 171, 254);
+  cursor: pointer;
+  font-size: 25px;
+   }
+ h3{
+  margin-right: 60px;
+  
+ }
+ span{
+ display: block;
+ }
+
+/* footer  */
+
+/* 
+
+  /*
+  .what-i-do-card-container{
+  display: flex;
+  justify-content: space-between;
+  /* box-shadow: 2px;
+  height: 200px; 
+  margin-top:  20px;
+  gap: 8px;
+  } */
+  
+  
+  
+  
+  
+  /*
+  .what-i-do-card-container .what-i-do-card{
+    border: 2px solid rgb(173, 173, 243);
+    border-radius: 10px;
+    padding: 8px;
+    text-align: left;
+  } 
+  .what-i-do-card{
+   height: 300px;
+    width: 200px;
+    gap: 5px;
+  }
+*/
