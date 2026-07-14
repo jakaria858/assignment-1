@@ -15,19 +15,12 @@ nav{
   justify-content: space-between;
 
 }
-.logo{
-  display: flex;
-}
 nav div img{
   /* width: 50px; */
   height: 50px;
   margin-top: 30px; 
-  
-}
-/* .logo-text{
-  display: block;
-  gap: 0;
-} */
+  }
+
 nav div ul li, a{
   list-style: none;
   padding: 10px;
@@ -61,20 +54,18 @@ nav div ul li, a{
     color: white;
      height: 100vh;
      text-align: center;
-     /* position: relative; */
-    /* background-color: black; */
+    
      cursor: pointer;
       
-      
 }
-.overlay{
+/* .overlay{ */
   /* position: absolute; */
   /* top: 0;
   left: 0; */
   /*z-index: 2;  Specify a stack order in case you're using a different order for other elements */
   /*: pointer;  Add a pointer on hover */
   
-}
+/* } */
  section div h1, p{
   
   padding: 50px;
@@ -90,12 +81,13 @@ nav div ul li, a{
 
 /* meet the speakers */
 
+
+
 .meet-the-speakers{
-  text-align: center;
-}
-.meet-the-speakers{
-  margin: 30px;
+   text-align: center;
+  margin: 20px;
   padding: 20px;
+ 
 }
 .top-cards{
  display: flex;
@@ -107,11 +99,7 @@ justify-content: space-between;
  justify-content: space-between;
  
 }
-.card-text{
-  /* display: block; */
-  
- /* */
- }
+
  .card-text,span{
   display: block;
    text-align: left;
@@ -125,17 +113,19 @@ justify-content: space-between;
   background-color: rgb(244, 242, 236);
   border-radius: 20px ;
  }
- span{
-  /* color: blue;
-  font: 900; */
+ .card img{
+  border-radius: 10px 10px 0 0;
  }
+
+ 
 /* meet the speakers --end */
 
 /* Secure Your Spot */
 .meet-container{
 max-width: 1200px;
   margin: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
   gap: 20px;
 } 
 .meet{
@@ -200,6 +190,9 @@ hr{
     width: 350px;
      border: 2px solid rgb(184, 184, 227);
 } 
+.meet-card ul, li::marker{
+color: rgb(106, 106, 231);
+}
 /*  */
 /* something */
  /* FAQ Section */
