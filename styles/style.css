@@ -54,23 +54,26 @@ nav div ul li, a{
 }
 /* banner section */
 .background-img{
-  background-image: url(../images/banner.jpg);
-   background-size: cover;
+  background: linear-gradient(90deg,rgba(0, 0, 0, .55) , rgba(0, 0, 0, .55)), url("../images/banner.jpg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
      height: 100vh;
      text-align: center;
-     position: relative;
+     /* position: relative; */
+    /* background-color: black; */
+     cursor: pointer;
+      
+      
 }
 .overlay{
   /* position: absolute; */
   /* top: 0;
   left: 0; */
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  background-color: black;
+  /*z-index: 2;  Specify a stack order in case you're using a different order for other elements */
+  /*: pointer;  Add a pointer on hover */
+  
 }
  section div h1, p{
   
@@ -144,15 +147,16 @@ max-width: 1200px;
 }
 .card-btn{
    /* height: 50px; */
-   width: 250px;
+   width: 270px;
    border-radius: 10px;
    padding: 20px;
    cursor: pointer;
    font-weight: bold;
    padding: 10px;
-   align-items: center;
+   margin-top: 20px;
+   margin-left: 2rem;
 }
-.meet-card{
+ .meet-card{
   display: grid;
   /* grid-template-areas: var(3, 1fr); */
    grid-template-columns: repeat(3,1fr); 
@@ -160,7 +164,7 @@ max-width: 1200px;
   /* margin: 10; */
     /* box-shadow: red; */
   border-color: wheat;
-  background-color: rgb(116, 198, 198);
+  
   align-items: stretch;  /* Makes all cards equal height*/
     flex: 1;              /* Equal width */
     height: 600px;  /* Same height */
@@ -169,26 +173,99 @@ max-width: 1200px;
    box-sizing: border-box;
 }
 hr{
-  color: black;
+  margin-left: 1.5rem;
+  margin-right: 2rem;
   font: 100;
  }
 
 .meet-card-1{
-  background-color: rgb(244, 235, 217);
+  /* background-color: rgb(244, 235, 217); */
  border-radius: 10px;
+  height: 450px;  /* Same height */
+    width: 350px;
+    border: 2px solid rgb(184, 184, 227);
 }
 .meet-card-2{
   background-color: rgb(54, 46, 46);
   color: #FFFFFF;
   border-radius: 10px;
+   height: 450px;  /* Same height */
+    width: 350px;
  
 }
 .meet-card-3{
-  background-color: rgb(184, 242, 242);
+  background-color: rgb(222, 226, 228);
   border-radius: 10px;
+   height: 450px;  /* Same height */
+    width: 350px;
+     border: 2px solid rgb(184, 184, 227);
 } 
 /*  */
 /* something */
+ /* FAQ Section */
+.faq {
+    background:  #f5f7fb;
+    padding: 80px 20px;
+   
+}
+
+.container {
+    max-width: 800px;
+    /* margin: auto; */
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+details {
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 18px 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+summary {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding-right: 30px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 24px;
+    color: #0077ff;
+}
+
+
+
+details p {
+    margin-top: 15px;
+    color: #555;
+    line-height: 1.7;
+}
+
+
 
 /* something-end */
 
